@@ -9,14 +9,14 @@ $user = new User;
 $user = $user->find(1);
 
 
-// one way [ where posts() works as relationship ]
+// one way [ where posts works as method and return relationship ]
 foreach($user->posts()->get() as $post) {
   echo "{$post->id} : {$post->title} "; // column name as property
 }
 
 echo "<br /><br />";
 
-// another way [ where posts works as property ]
+// another way [ where posts works as property and return database record ]
 foreach($user->posts as $post) {
   echo "{$post->id} : {$post->title} ";
 }
