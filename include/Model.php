@@ -10,7 +10,7 @@ class Model extends Database
   protected $table = 'users';
 
   /**
-   * Hidden column.
+   * Hidden columns.
    *
    * @var array
    */
@@ -56,7 +56,7 @@ class Model extends Database
   /**
    * Has many relationship.
    *
-   * @param  string  $relationTableName ]
+   * @param  string  $relationTableName
    * @return object
    */
   public function hasMany($relationTableName)
@@ -140,7 +140,7 @@ class Model extends Database
   }
 
   /**
-   * Dynamically set property value.
+   * Dynamically set column value.
    *
    * @param string $columnName
    * @param mixed $value
@@ -155,7 +155,7 @@ class Model extends Database
   }
 
   /**
-   * Dynamically handler column value.
+   * Dynamically handle column value.
    *
    * @param  string $method
    * @param  array $params
@@ -174,7 +174,7 @@ class Model extends Database
   }
 
   /**
-   * Get field name.
+   * Get column name.
    *
    * @param  string $method
    * @param  string $type
